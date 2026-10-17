@@ -1,0 +1,41 @@
+name: motogastos
+description: >
+  Reconoce tu moto con la cámara y estima el gasto anual de tenerla en
+  Colombia (SOAT, tecnomecánica, impuesto vehicular, gasolina y mantenimiento).
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Cámara y selección de imagen
+  camera: ^0.12.1
+  image_picker: ^1.2.3
+  permission_handler: ^13.0.2
+
+  # Estado de la app
+  provider: ^6.1.5
+
+  # Llamadas HTTP al servicio de reconocimiento (API de visión en la nube)
+  http: ^1.6.0
+
+  # Gemini multimodal para identificar la moto y extraer sus estimaciones
+  google_generative_ai: ^0.4.7
+
+  # Tipografía (Space Grotesk + IBM Plex Sans, igual que el prototipo)
+  google_fonts: ^8.2.1
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
